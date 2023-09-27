@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { loginSchema } from "./loginSchema";
-import { StyledForm } from "../style";
+import { StyledForm } from "../styles";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { UserContext } from "../../../providers/UserContext";

@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { BeerContext } from "../../providers/BeerContext";
-import { StyledModal } from "./style";
+import { StyledModal } from "./styles";
 
 export const Modal = () => {
   const { setIsOpen, currentBeer } = useContext(BeerContext);
@@ -17,20 +17,18 @@ export const Modal = () => {
             <button onClick={() => closeModal()}>X</button>
           </div>
           <div className="contentModal">
-            <div className="divNameImg">
+            <div className="divImg">
               <img src={currentBeer.image_url} alt={currentBeer.name} />
             </div>
             <div className="divDescription">
               <h2>{currentBeer.name}</h2>
-              <p>{currentBeer.description}</p>
-              {/* <div className="moreInfosBeer"> */}
+              <p className="description">{currentBeer.description}</p>
               <span>PH: {currentBeer.ph}</span>
               <span>
                 Volume: {currentBeer.volume.value}
                 {currentBeer.volume.unit}
               </span>
               <span>abv: {currentBeer.abv}</span>
-              {/* </div> */}
             </div>
           </div>
         </div>

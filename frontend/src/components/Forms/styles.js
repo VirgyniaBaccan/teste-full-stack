@@ -33,7 +33,7 @@ export const StyledForm = styled.form`
     align-items: flex-start;
     flex-direction: column;
     width: 90%;
-    gap: 1rem;
+    gap: 0.8rem;
   }
 
   input {

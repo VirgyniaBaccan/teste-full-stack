@@ -21,11 +21,11 @@ export const StyledModal = styled.div`
     justify-content: flex-start;
     width: 90%;
     max-width: 60vw;
-    height: max-content;
-    max-height: 100vh;
+    height: 60vh;
     background-color: var(--color-grey-0);
     padding-bottom: 1rem;
-    /* background-color: green; */
+    border-radius: 5px;
+    border: 2px solid var(--color-grey-4);
   }
 
   .divBtnClose {
@@ -37,7 +37,6 @@ export const StyledModal = styled.div`
     padding: 1rem;
     align-items: center;
     justify-content: center;
-    /* background-color: yellow; */
   }
 
   img {
@@ -54,14 +53,12 @@ export const StyledModal = styled.div`
     padding: 1rem;
   }
 
-  .divNameImg {
+  .divImg {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     width: 30%;
     height: 100%;
-    /* gap: 1.5rem; */
-    /* background-color: blue; */
   }
 
   .divDescription {
@@ -73,6 +70,13 @@ export const StyledModal = styled.div`
     gap: 2rem;
   }
 
+  .description {
+    display: flex;
+    width: 100%;
+    max-height: 40%;
+    overflow: auto;
+  }
+
   .moreInfosBeer {
     display: flex;
     width: 95%;
@@ -80,5 +84,19 @@ export const StyledModal = styled.div`
     padding: 1rem;
     align-items: center;
     justify-content: space-between;
+  }
+
+  @media (max-width: 48rem) {
+    .modalContainer {
+      overflow: auto;
+    }
+    .contentModal {
+      width: 90%;
+      height: 100%;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem;
+    }
   }
 `;
