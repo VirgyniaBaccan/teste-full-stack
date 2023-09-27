@@ -3,8 +3,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { loginSchema } from "./loginSchema";
 import { StyledForm } from "../styles";
 import { Link } from "react-router-dom";
-import { useContext } from "react";
-import { UserContext } from "../../../providers/UserContext";
 export const LoginForm = () => {
   const {
     register,
@@ -14,15 +12,8 @@ export const LoginForm = () => {
     resolver: zodResolver(loginSchema),
   });
 
-  const { userLogin } = useContext(UserContext);
-
-  const submit = async (formData) => {
-    await userLogin(formData);
-    console.log(formData);
-  };
-
   return (
-    <StyledForm onSubmit={handleSubmit(submit)}>
+    <StyledForm>
       <div className="container">
         <h1>beerpedia</h1>
         <div className="divInputs">
@@ -44,9 +35,9 @@ export const LoginForm = () => {
           <span className="errors">{errors.password?.message}</span>
         </div>
         <div className="divButtons">
-          <button className="formButtons" type="submit">
+          <Link to={"/dashboard"} className="formButtons" type="submit">
             Entrar
-          </button>
+          </Link>
           <p>ou</p>
           <Link to={"/register"} className="formButtons">
             Cadastrar-se

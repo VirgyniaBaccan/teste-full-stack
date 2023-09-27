@@ -32,16 +32,16 @@ export const StyledModal = styled.div`
     display: flex;
     position: absolute;
     right: 0;
-    width: 20px;
-    height: 20px;
+    width: 1.25rem;
+    height: 1.25rem;
     padding: 1rem;
     align-items: center;
     justify-content: center;
   }
 
   img {
-    width: 50px;
-    height: 200px;
+    width: 3.125rem;
+    height: 12.5rem;
   }
 
   .contentModal {
@@ -80,7 +80,7 @@ export const StyledModal = styled.div`
   .moreInfosBeer {
     display: flex;
     width: 95%;
-    height: 50px;
+    height: 3.125rem;
     padding: 1rem;
     align-items: center;
     justify-content: space-between;

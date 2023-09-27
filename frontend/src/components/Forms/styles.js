@@ -41,15 +41,14 @@ export const StyledForm = styled.form`
     align-items: center;
     justify-content: flex-start;
     background-color: var(--color-grey-0);
-    height: 40px;
+    height: 2.5rem;
     width: 100%;
-    text-indent: 10px;
-    border-radius: 5px;
+    text-indent: .625rem;
+    border-radius: .3125rem;
   }
 
   .divButtons {
     display: flex;
-    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
     width: 90%;
@@ -59,10 +58,10 @@ export const StyledForm = styled.form`
   .formButtons {
     display: flex;
     justify-content: center;
-    padding: 10px;
-    width: 300px;
+    padding: .625rem;
+    width: 18.75rem;
     background-color: var(--color-primary);
-    border-radius: 5px;
+    border-radius: .3125rem;
     color: var(--color-grey-0);
     font-weight: bolder;
   }
@@ -72,7 +71,7 @@ export const StyledForm = styled.form`
   }
 
   .errors {
-    font-size: 12px;
+    font-size: .75rem;
     color: var(--color-negative);
   }
 `;

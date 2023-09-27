@@ -26,20 +26,22 @@ export const StyledHeader = styled.header`
     color: var(--color-primary);
   }
 
-  button {
+  .buttonLogout {
+    display: flex;
+    justify-content: center;
     background-color: var(--color-primary);
-    padding: 6px;
-    width: 100px;
+    padding: 0.375rem;
+    width: 6.25rem;
     font-weight: bolder;
-    border-radius: 12px;
+    border-radius: 0.75rem;
     color: var(--color-grey-0);
   }
-  button:hover {
+  .buttonLogout:hover {
     background-color: var(--color-secondary);
   }
 
   @media (max-width: 25rem) {
-    button {
+    .buttonLogout {
       width: max-content;
     }
   }

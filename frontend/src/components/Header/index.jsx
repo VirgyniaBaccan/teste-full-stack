@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { StyledHeader } from "./styles";
 
 export const Header = () => {
@@ -6,7 +7,9 @@ export const Header = () => {
       <StyledHeader>
         <div>
           <h1>beerpedia</h1>
-          <button>Sair</button>
+          <Link to={"/"} className="buttonLogout">
+            Sair
+          </Link>
         </div>
       </StyledHeader>
     </>

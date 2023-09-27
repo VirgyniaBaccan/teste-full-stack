@@ -6,7 +6,6 @@ import { Modal } from "../../components/Modal";
 import { BeerContext } from "../../providers/BeerContext";
 
 export const Dashboard = () => {
-
   const { isOpen } = useContext(BeerContext);
 
   return (

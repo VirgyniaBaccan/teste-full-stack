@@ -6,8 +6,8 @@ export const BeerContext = createContext({});
 export const BeerProvider = ({ children }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [beerList, setBeerList] = useState([]);
-  const [currentBeer, setCurrentBeer ] = useState({});
-  const [isOpen, setIsOpen] = useState(false)
+  const [currentBeer, setCurrentBeer] = useState({});
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     const loadBeerData = async () => {
@@ -25,7 +25,16 @@ export const BeerProvider = ({ children }) => {
   }, []);
 
   return (
-    <BeerContext.Provider value={{ beerList, isLoading, setIsOpen, setCurrentBeer, isOpen, currentBeer }}>
+    <BeerContext.Provider
+      value={{
+        beerList,
+        isLoading,
+        setIsOpen,
+        setCurrentBeer,
+        isOpen,
+        currentBeer,
+      }}
+    >
       {children}
     </BeerContext.Provider>
   );
