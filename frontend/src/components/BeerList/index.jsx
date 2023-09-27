@@ -1,4 +1,3 @@
-import React from "react";
 import { useContext } from "react";
 import { BeerContext } from "../../providers/BeerContext";
 import { StyledMain } from "./styles";
