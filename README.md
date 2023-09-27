@@ -1,43 +1,56 @@
-O teste consiste em criar uma aplicação que expõe uma API REST de um CRUD de produtos e autenticação, e uma aplicação web contendo uma interface para login e acesso a dados de uma API externa. 
+Aplicação de Gerenciamento de Produtos e Acesso à Punk API v2
+Olá! Bem-vindo à minha aplicação Full Stack de gerenciamento de produtos e acesso à Punk API v2. Neste projeto, criei uma aplicação que consiste em um back-end com uma API REST para um CRUD de produtos e autenticação, e um front-end com uma interface de login, listagem de dados da Punk API v2 e recursos adicionais.
 
-Depois de logado, o usuário da aplicação web deve poder acessar os dados da [Punk API v2](https://punkapi.com/). 
+Tecnologias Utilizadas
+Back-end 💻
+Node.js: Utilizei o ambiente de execução JavaScript no lado do servidor.
+Express.js: Construí a API RESTful usando o framework Express.js para Node.js.
+JWT (JSON Web Tokens): Implementei autenticação de usuário usando tokens JWT.
+MongoDB: Utilizei o banco de dados NoSQL MongoDB para armazenar dados de produtos e usuários.
+Mongoose: Facilitei a interação com o MongoDB usando a biblioteca Mongoose.
+Validator: Implementei validação de dados recebidos pela API.
+Front-end 🎨
+React: Desenvolvi a interface do usuário usando a biblioteca React.
+React Router: Implementei navegação entre páginas com o React Router.
+Axios: Realizei solicitações HTTP à API do back-end usando o Axios.
+Responsividade: Garanti que o front-end seja responsivo para funcionar em diferentes dispositivos.
+Funcionalidades
+Back-end:
+Criei uma API REST com endpoints para CRUD de produtos.
+Implementei autenticação de usuário usando tokens JWT.
+Realizei validação de dados recebidos pela API.
+Forneço endpoints de login e cadastro.
+Front-end:
+Criei uma interface de login e cadastro com feedback para informações de login incorretas.
+Liste os dados da Punk API v2 após o login.
+Garanti que o front-end seja responsivo para uso em dispositivos móveis e desktop.
+Recursos Extras 🌟
+Filtragem de dados da Punk API v2 por nome, estilo de cerveja, teor alcoólico e outros critérios.
+Ordenação dos dados da Punk API v2 por nome, teor alcoólico e outros campos.
+Adicionei a capacidade de deixar comentários e avaliações para as cervejas.
+Dockerfile com todas as dependências para facilitar a implantação da aplicação.
+Como Executar o Projeto
+Faça um fork deste repositório.
 
-NOTA: O front-end e back-end deve ser realizado apenas por desenvolvedores Full Stack. Caso contrário, realize o teste de acordo com sua área de atuação.
+Clone o seu fork para a sua máquina local.
 
-NOTA 2: Não esqueça de fazer o fork do repositório.
+Navegue para o diretório do projeto.
 
-## Back-end 💻
-- Todos os endpoints de consulta de dados devem ter autenticação por webtoken ou similar.
-- Deve existir validação dos dados recebidos pela API.
-- O CRUD não precisa de interface, apenas o login e o cadastro
+Instale as dependências do projeto usando o npm ou yarn:
 
-## Front-end 🎨
-O front-end deve atender aos seguintes requisitos:
-- Interface de login e cadastro com feedbacks para usuário ou senha incorreta.
-- Listagem dos dados da Punk API v2.
-- Responsividade.
+Copy code
+npm install
+ou
 
-## Extras 🌟
-O desenvolvimento dessas features é opcional.
+Copy code
+yarn install
+Siga as instruções no README do back-end para configurar o servidor e o banco de dados.
 
-- Filtragem dos dados da Punk API v2 por diferentes critérios, como nome, estilo de cerveja, teor alcoólico, etc.
-- Ordenação dos dados da Punk API v2 por diferentes campos, como nome, teor alcoólico, etc.
-- Comentários e avaliações: permitir que os usuários deixem comentários e avaliações para as cervejas.
-- Dockerfile com todas as dependências.
+Siga as instruções no README do front-end para iniciar a interface do usuário.
 
-## Critérios de avaliação ✅
-- Funcionamento do projeto.
-- Estrutura do código.
-- Uso de boas práticas.
-- Cumprimento dos requisitos mínimos.
+Divirta-se explorando a aplicação!
 
-## Entrega 📦
+Conclusão
+Esta aplicação é uma demonstração das minhas habilidades como desenvolvedor Full Stack. Ela oferece um conjunto completo de funcionalidades, desde a autenticação de usuário até o acesso a uma API externa e recursos adicionais, como filtragem, ordenação e avaliações de produtos.
 
-- Um repositório git (fork deste).
-- Um README do projeto com o passo-a-passo para executar a aplicação.
-
-## Observações 📝
-
-1. Pode ser utilizado qualquer framework front-end, preprocessadores de css, task runners, bundlers, etc, de sua preferência, mas nenhum deles é de uso obrigatório.
-
-2. Não se deve fazer o commit de pastas como node_modules, o projeto deve instalar suas dependências a partir do package.json.
+Obrigado por conferir minha aplicação! Se você tiver alguma dúvida ou precisar de assistência adicional, não hesite em entrar em contato. Estou ansioso para receber seu feedback e sugestões de melhoria.

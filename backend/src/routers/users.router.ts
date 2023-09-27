@@ -6,7 +6,7 @@ import usersController from "../controllers/users.controller";
 export const userRouter: Router = Router();
 
 userRouter.post(
-  "",
+  "/register",
   middlewares.validateBody(userCreateSchema),
   middlewares.uniqueEmail,
   usersController.create
